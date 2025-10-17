@@ -1,559 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nayem Jaman Tusher — Portfolio</title>
+  <link rel="icon" href="assets/img/title2.jpg" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/title2.jpg">
-    <title>| Nayem Jaman Tusher</title>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
+  <!-- Bootstrap (optional, used for grid) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Start of Async Drift Code -->
-<script>
+  <!-- Main styles -->
+   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Drift chat (kept) -->
+  <script>
     "use strict";
-    
     !function() {
       var t = window.driftt = window.drift = window.driftt || [];
       if (!t.init) {
         if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-          return function() {
-            var n = Array.prototype.slice.call(arguments);
-            return n.unshift(e), t.push(n), t;
-          };
-        }, t.methods.forEach(function(e) {
-          t[e] = t.factory(e);
-        }), t.load = function(t) {
-          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-          var i = document.getElementsByTagName("script")[0];
-          i.parentNode.insertBefore(o, i);
-        };
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+        t.factory = function(e){ return function(){ var n = Array.prototype.slice.call(arguments); n.unshift(e); t.push(n); return t; }; },
+        t.methods.forEach(function(e){ t[e] = t.factory(e); }),
+        t.load = function(t){ var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script"); o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js"; var i = document.getElementsByTagName("script")[0]; i.parentNode.insertBefore(o, i); };
       }
     }();
     drift.SNIPPET_VERSION = '0.3.1';
     drift.load('37c58fpzcia9');
-    </script>
-    <!-- End of Async Drift Code -->
-
-
-
-
-
-
-
-
-
-
-   
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-        type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+  </script>
 </head>
+<body>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark self-bg-color fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Nayem Jaman Tusher</span>
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/NJT.jpg"
-                    alt="..." /></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Services</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Accomplishments</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-            </ul>
+  <!-- SIDE NAV -->
+  <nav id="sideNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid d-flex align-items-center">
+      <a class="navbar-brand d-flex align-items-center" href="#top">
+        <img src="assets/img/NJT.jpg" alt="Nayem Jaman Tusher" class="profile-img">
+        <div class="brand-text">
+          <div class="name">Nayem Jaman <span class="accent">Tusher</span></div>
+          <div class="sub">Python Developer • Backend Engineer</div>
         </div>
-    </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-        <!-- About-->
-        <section class="resume-section" id="about">
-            <div class="resume-section-content">
-                <div class=" d-flex justify-content-start">
-                    <h1 class="mb-0 mt-0">
-                        Nayem Jaman
-                        <span class="text-primary">Tusher</span>
-                    </h1>
-                    
-                </div>
-                <div class=" d-flex justify-content-end">
-                    <script type="text/javascript" src="https://freehitcounters.org/count/beby"></script><br>
-                    <a href='http://www.counter-zaehler.de'>.</a> <script type='text/javascript' src='https://whomania.com/ctr?id=353566ceac10381d740152c4491543c3b53601ef'></script>
-                </div>
-                <div class="subheading mb-5">
-                    Dhaka, Bangladesh.
-                    <br>
-                    <h6> <a href="mailto:nayemjamantusher@gmail.com">nayemjamantusher@gmail.com</a></h6>
-                    
-                    
-                </div>
-                
-                <p class="lead mb-2">
-                    <h4>Welcome to my website! 👋.</h4>
-                </p>
-                <p class="lead mb-3">I'm a Python developer with expertise in web development (Django, Django REST Framework, SQL, NoSQL), 
-                    web scraping (Scrapy, Selenium), and automation. With over a year of industry experience, 
-                    I specialize in data analytics using Pandas, Numpy, and visualization tools like Matplotlib, Seaborn, and Folium.</p>
-                <p class="lead mb-3">I've been in the industry for approximately a year. I'm seeking opportunities to
-                    work on projects including web scraping and automation, web development, and data analytics.
-                    also a Dreamer and Lifelong Learner.</p>
-                <p class="mb-3 text-dark">With approximately one year of industry experience, 
-                    I'm eager to take on projects that involve API development, web scraping, automation, and data analytics. </p>                
-                <p class="mb-3 lead">As a Dreamer and Lifelong Learner, I'm always looking for new opportunities to grow and contribute to exciting projects. 
-                    If you're interested in working together, please don't hesitate to reach out. </p>
+      </a>
 
+      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                    <div class="middle mt-5 mb-0">
-                    
-                        <a class="btn" href="https://www.facebook.com/nayem.jamantusar/">
-                          <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="btn" href="https://github.com/Nayemjaman">
-                          <i class="fab fa-github"></i>
-                        </a>
-                        <a class="btn" href="https://twitter.com/nayemjaman">
-                          <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="btn" href="https://www.instagram.com/nayemjaman/">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="btn" href="https://www.linkedin.com/in/nayemjaman/">
-                          <i class="fab fa-linkedin"></i>
-                        </a>
-                      </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Experience-->
-        <section class="resume-section mt-0" id="experience">
-            <div class="resume-section-content">
-                <h2 class="mb-2">Experience</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-2">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Back-end Developer (Python) 2023 September- Current</h3>
-<!--                          <div class="subheading mb-3">Intelitec Solutions</div> -->
-                        <pre>
-• Build backend for finance support(Loan) system on b2b platform with DRF and PostgreSQL.
-• Designed in-app notification system APIs for brand, seller, distributor and official staff with Django channels.
-• Build multiple product searches simultaneously with voice with Open AI whisper Engine.
-• Enhance API, Fix bugs and test and document API with Postman.
-
-                        </pre>
-                    </div> 
-                    <!-- <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div> -->
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-2">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Research Assistant (Data Analyst) </h3>
-                        <h4 class="mb-0">BRUR EEE Department, Rangpur, Bangladesh, 2021-2022 </h4>
-<!--                          <div class="subheading mb-3">Intelitec Solutions</div> -->
-                        <pre>
-• Analyzed the relationship between aerosol optical depth and meteorological parameters during the COVID-19
-lockdown in Bangladesh using remote sensing data. Published in IEEE [ICRPSET-2022], <a href="https://ieeexplore.ieee.org/abstract/document/10188529">View</a>
-• Investigated spatiotemporal changes in aerosol loadings across Bangladesh using remote sensing data
-utilizing Python and R libraries. Published in IEEE [ICRPSET-2022], <a href="https://ieeexplore.ieee.org/document/10188572">View</a>
-• Performed data collection, preparation, and analysis.
-
-                        </pre>
-                    </div> 
-                    <!-- <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div> -->
-                </div>
-
-                
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-2">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Freelance </h3>
-<!--                          <div class="subheading mb-3">Intelitec Solutions</div> -->
-                        <pre>
-• Developed APIs for E-commerce website using Django Rest Framework and PostgreSQL.
-• Designed and developed APIs for Healthcare website using Django, bootstrap4, jQuery and PostgreSQL.
-• Developed e-commerce scraper (50k+ products) using Scrapy and performed data analysis using Pandas.
-• Designed and developed APIs for E-commerce website using Django Rest Framework and PostgreSQL.
-• Build an automation script for scraping data company information and reviews from Google Maps with Selenium.
-                        </pre>
-                    </div> 
-                    <!-- <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div> -->
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-2">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Projects</h3>
-<!--                          <div class="subheading mb-3">Intelitec Solutions</div> -->
-                        <pre>
-• Free-Books – <a href="https://github.com/Nayemjaman/Free-Books">GitHub Repository</a> | <a href="https://nayemjaman.pythonanywhere.com/">View</a> | Django, Html, CSS, Bootstrap and UIkit.
-    o Developed a book store where registered users can download books for free using Django, Bootstrap, and UIkit.
-• Codingbrunch – <a href="https://github.com/Nayemjaman/DjangoRestBlog">GitHub Repository</a> | <a href="https://codingbrunch.pythonanywhere.com/">View</a> | Django, Bootstrap, HTML, CSS.
-    o Developed a blog API using Django Rest Framework, PostgreSQL, Docker, and Swagger UI
-and implemented CRUD operations for blog posts by multiple users and user interaction features such as
-upvoting posts and adding comments
-• Dailystarscraper – <a href="https://github.com/Nayemjaman/dailystarscraper">GitHub Repository</a> | Python, Django, Scrapy, SQLite.
-    o Built a scrapy-Django integrated scraping pipeline that crawls news from some popular
-English newspapers in Bangladesh and stored them in the MongoDB database.
-• Developed an automation script using Selenium that downloads photos from Instagram– <a href="https://github.com/Nayemjaman/instagramPhotoScraper">GitHub Repository</a>
-• Scraped Real estate marketplace named bdhousing – <a href="https://github.com/Nayemjaman/bdhousing">GitHub Repository</a> | Python, Scrapy<pre> 
-                    </div>
-                    <!-- <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div> -->
-                </div>
-
-                
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Education-->
-        <section class="resume-section" id="education">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Education</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Thakurgaon Govt. Boys' High School</h3>
-                        <div class="subheading mb-3"><i>Science</i></div>
-                        <p>GPA: 5.00</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2013</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Police Lines School and College, Rangpur</h3>
-                        <div class="subheading mb-3"><i>Science</i></div>
-                        <p>GPA: 5.00</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2015</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Begum Rokeya University, Rangpur</h3>
-                        <div class="subheading mb-3"><i>Faculty of Engineering</i></div>
-                        <div class="subheading mb-3">Depertment of Electrical and Electronics Engineering</div>
-                        <!-- <p>GPA: 5.00</p> -->
-                    </div>
-                    <!-- <div class="flex-shrink-0"><span class="text-primary">2013</span></div> -->
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Skills-->
-        <section class="resume-section" id="skills">
-            <div class="resume-section-content">
-                <div>
-                    <h2>Skills</h2>
-                <ul class="list-inline">
-                  <li><b class="h5">Programming Languages: </b>Python, C, java script.</li>
-                  <li><b class="h5">Back-End Technologies: </b>Django, Django Rest Framework.</li>
-                  <li><b class="h5">Front-End Technologies: </b>HTML5, CSS, Jquery, Bootstrap, UIkit.</li>
-                  <li><b class="h5">Web scraping & automation : </b>bs4, Scrapy, selenium etc.</li>
-                  <li><b class="h5">Data Science: </b>Data science pipeline, (cleansing, wrangling, visualization,
-                    modeling, interpretation), Numpy, Pandas, Matplotlib, Plotly, Seaborn, Folium.</li>
-                  <li><b class="h5">Database: </b>PostgreSQL, SQLite, SQL, MongoDB.</li>
-
-                  <li><b class="h5">Additional skills: </b>API testing with Postman, scraping and automation (Scrapy, Selenium), 
-                      </br>Docker, swagger UI, Git, GitHub and GitLab. Microsoft Excel etc.</li>
-                  <li><b class="h5">Communication : </b>Bangali, English, Hindi.</li>
-                </ul>
-                </div>
-
-
-                <!-- <div>
-                    <div class="subheading h2">Workflow</div>
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Web development
-                            </button>
-                          </h2>
-                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <span class="fa-li"><i class="fas fa-check"></i></span>  
-                            Web scraping & automation
-                            </button>
-                          </h2>
-                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Data analytics and visualization
-                            </button>
-                          </h2>
-                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                          </div>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Services</h2>
-                                <h4>Web development</h4>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        High-performance and scalable RESTful API with Django. 
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Application support, troubleshooting, bug fixes in Django and Django rest API.
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        API development using the Django REST framework, Mysql, PostgreSQL, and SQLite.
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Authentication of endpoints with Session, JWT, SSO, OAuth2.
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Third-party API integration.
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Documenting the API using swagger UI.
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        API testing and documentation with Postman.
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Payment gateway (Stripe) integration.
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                       SMS/Email integration (Twilio, Sendgrid, Mailgun) for automation (User password recovery, OTP, Notification).
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Designing and Developing with Django and Django RESTFUL APIs.
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Django and Bootstrap5 are used to create a modern, mobile-friendly website with SEO-friendly URLs.
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Scrapy-Django Integration (Make web application using scraped data) & REST API
-                    </li>
-
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Frontend development with HTML, CSS, Bootstrap5, Javascript, Jquery, and UIkit.
-                    </li>
-
-                </ul>
-                <h4>Data Analytics</h4>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Exploratory data analysis with python libraries - Pandas, Numpy, Seaborn, Plotly, Folium, etc.
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Database Integration(PostgreSQL, MySQL)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        File Handling(CSV, JSON, txt, xlsx etc)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Data Visualization
-                    </li>
-
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Data Visualization and Dashboards.
-                    </li>
-                </ul>
-                <h4>Web Scraping & Automation</h4>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Social Data Scraping and Automation (Facebook, Instagram, Twitter, Reddit, etc)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        scrap data from websites using Python Beautiful Soup, requests and selenium.
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Scrap data from e-commerce websites and login required websites.
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Fetch data from API and web automation.
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Scrapy-Django Integration (Make web application using scraped data) & REST API
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Scrape job posts/data from job portals and Social Media .
-                    </li>
-                </ul>
-
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Awards-->
-        <section class="resume-section" id="awards">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Certifications</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        <span class="fw-bold">Python</span> for Everybody by University of Michigan on Coursera - <a target="_blank" href="https://www.coursera.org/account/accomplishments/specialization/STZMUNZ8K4JK">Credential</a>
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Programming for Everybody (Getting Started with Python) by University of Michigan on <span class="fw-bold">Coursera</span> - <a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/BZBXTNEQ3NJS">Credential</a>
-
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Crash Course on Python by <span class="fw-bold">Google</span> on Coursera - <a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/FQZ2LRKSV6NT">Credential</a>
-
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Using Python to Access Web Data by <span class="fw-bold">University of Michigan </span> on Coursera - <a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/2ZDX4E9TWCFT">Credential</a>
-
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Capstone: Retrieving,Processing,and <span class="fw-bold">Visualizing</span> Data with Python by University of Michigan on Coursera-<a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/Q84MET5XYHNB">Credential</a>
-
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Using <span class="fw-bold">Databases</span> with Python by University of Michigan on Coursera - <a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/W7FER6WTMYXE">Credential</a>
-
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        <span class="fw-bold">SQL</span> for <span class="fw-bold">Data Science</span> by University of California, Davis on Coursera - <a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/RZ2DDZ5ASXBU">Credential</a>
-
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Python Data Structures by University of Michigan on Coursera - <a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/R9T7VDHXGGD6">Credential</a>
-
-                    </li>
-                    <!-- <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Programming for Everybody (Getting Started with Python) by University of Michigan on Coursera - <a target="_blank" href="">Credential</a>
-
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Programming for Everybody (Getting Started with Python) by University of Michigan on Coursera - <a target="_blank" href="">Credential</a>
-
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Programming for Everybody (Getting Started with Python) by University of Michigan on Coursera - <a target="_blank" href="">Credential</a>
-
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Programming for Everybody (Getting Started with Python) by University of Michigan on Coursera - <a target="_blank" href="">Credential</a>
-
-                    </li> -->
-
-                </ul>
-            </div>
-        </section>
-        <section class="resume-section " id="contact">
-            <div class="resume-section-content ">
-                <h2>Contact</h2>
-                <hr style="width:50%; height: 4px;border-width:0;color:rgb(10, 10, 10);background-color:rgb(6, 5, 5)">
-                <div class="row h4">
-                    <div class="col-4 ">
-                        
-                            
-                          
-                            <i class="fab fa-fw fa-github"></i>
-                            <a class="text-dark" target="blank" href="https://github.com/Nayemjaman">Github</a>
-                            <br>
-                            <i class="fab fa-fw fa-linkedin"></i>
-                            <a class="text-dark" target="blank" href="https://www.linkedin.com/in/nayemjaman/">Linkedin</a>
-                            <br>
-                            <span>&nbsp;</span><i class="fa fa-envelope"></i>
-                            <a class="text-dark" target="blank" href="mailto:nayemjamantusher@gmail.com">&nbsp;Gmail</a>
-                            <br>
-                            <i class="fab fa-fw fa-twitter"></i>
-                            <a class="text-dark" target="blank" href="https://twitter.com/nayemjaman">Twitter</a>
-                    </div>
-                    <div class="col-4">
-                        <i class="fab fa-fw fa-whatsapp"></i>
-                        <a class="text-dark" target="blank" href="https://api.whatsapp.com/send?phone=+8801773662030">Whats app</a>
-                        <br>
-                        <i class="fab fa-fw fa-facebook"></i>
-                        <a class="text-dark" target="blank" href="https://www.facebook.com/nayem.jamantusar/">Facebook</a>
-                        <br>
-                        <i class="fab fa-fw fa-instagram"></i>
-                        <a class="text-dark" target="blank" href="https://www.instagram.com/nayemjaman/">Instagram</a>
-                    </div>
-
-                </div>
-                
-            </div>
-
-        </section>
-
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><button id="theme-toggle" class="btn btn-sm btn-ghost" aria-pressed="false" title="Toggle dark mode">
+            <i id="theme-icon" class="fa-solid fa-moon"></i>
+          </button></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    
-    
-   
+  <!-- MAIN CONTENT -->
+  <main id="top" class="main-content container-fluid">
+    <section id="about" class="section about-section">
+      <div class="row align-items-center">
+        <div class="col-lg-6 intro">
+          <h1>Hi, I’m <span class="accent">Nayem Jaman Tusher</span></h1>
+          <p class="lead">Python Developer • Backend Engineer • Automation & AI Integration Enthusiast</p>
+          <p>I build scalable backend systems, automation pipelines, and AI-assisted tools. Currently leading backend architecture for a Customer Management & Billing System with async billing and CI/CD automation.</p>
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+          <div class="mt-3 social">
+            <a href="mailto:nayemjamantusher@gmail.com" class="btn-link"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a href="https://github.com/Nayemjaman" class="btn-link"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/nayemjamantusher/" class="btn-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 offset-lg-1 profile-block">
+          <img src="assets/img/NJT.jpg" alt="Nayem" class="profile-card">
+          <div class="card-meta">
+            <div><strong>Location:</strong> Dhaka, Bangladesh</div>
+            <div><strong>Email:</strong> <a href="mailto:nayemjamantusher@gmail.com">nayemjamantusher@gmail.com</a></div>
+            <div><strong>Phone:</strong> +8801773662030</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <h3>Senior Python Developer — United Delcot Water Limited</h3>
+          <p class="muted">Jul 2025 – Present</p>
+          <ul>
+            <li>Architected Customer Management & Billing System (async billing, SSLCommerz & Upay integration).</li>
+            <li>Built AI support automation (OpenAI) to reduce ticket-response time by 60%.</li>
+            <li>Containerized & CI/CD automated deployments — improved delivery speed by 70%.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <h3>Back-end Developer — Micon Solutions</h3>
+          <p class="muted">Mar 2024 – Jun 2025</p>
+          <ul>
+            <li>Real-time chat with WebSockets supporting 5,000+ concurrent users.</li>
+            <li>Integrated Stripe payments; optimized payroll queries 120s → 15s.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <h3>Back-end Developer — Ekkbaz</h3>
+          <p class="muted">Sep 2023 – Feb 2024</p>
+          <ul>
+            <li>Loan approval engine — 3× faster processing, 99.99% accuracy.</li>
+            <li>Voice-enabled search using OpenAI Whisper (↑45% success).</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="project-card">
+            <h3><a href="https://github.com/Nayemjaman/Google_map_scraping_using_python_selenium">Google Maps Business Data Scraper</a></h3>
+            <p>Automated scraping across regions with throttling and structured CSV export. Saved ~60 hours/month for analytics.</p>
+            <div class="meta">Django • Selenium • CSV</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="project-card">
+            <h3><a href="https://github.com/Nayemjaman/bdnews-scraper">Bdnews-scraper</a></h3>
+            <p>Scrapy + Django backend: news aggregation for Bangladeshi sources with RESTful API and optimized PostgreSQL storage.</p>
+            <div class="meta">Scrapy • Django • PostgreSQL</div>
+          </div>
+        </div>
+
+        <div class="col-12 mt-3">
+          <div class="project-card muted">
+            <h3>Customer Management & Billing System (internal)</h3>
+            <p>Full-scale billing, onboarding, meter-reading automation, reporting, and Rajuk panel integration (photo-based meter reading & dynamic late fee policies).</p>
+            <div class="meta">Django • Celery • Docker • Redis</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="education" class="section">
+      <h2>Education & Research</h2>
+      <p><strong>B.Sc. Electrical & Electronic Engineering</strong> — Begum Rokeya University, Rangpur (2021)</p>
+      <p>Published IEEE papers on aerosol optical depth & meteorological analysis during COVID-19 lockdowns:
+        <a href="https://ieeexplore.ieee.org/abstract/document/10188529">Paper 1</a>,
+        <a href="https://ieeexplore.ieee.org/document/10188572">Paper 2</a>
+      </p>
+    </section>
+
+    <hr class="divider">
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div><strong>Languages:</strong> Python</div>
+        <div><strong>Frameworks:</strong> Django, DRF, FastAPI</div>
+        <div><strong>Databases:</strong> PostgreSQL, Redis</div>
+        <div><strong>DevOps:</strong> Docker, CI/CD, Git</div>
+        <div><strong>Async:</strong> WebSockets, Celery</div>
+        <div><strong>Scraping:</strong> Scrapy, Selenium</div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Interested in collaborating? I’m open to remote opportunities and freelance projects.</p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:nayemjamantusher@gmail.com"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
+        <a class="contact-card" href="https://github.com/Nayemjaman"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+        <a class="contact-card" href="https://www.linkedin.com/in/nayemjamantusher/"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+        <a class="contact-card" href="https://api.whatsapp.com/send?phone=+8801773662030"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container text-center">
+        <small>© <span id="year"></span> MD. Nayem Jaman Tusher — Built with care • <a href="https://github.com/Nayemjaman">GitHub</a></small>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Bootstrap JS (optional for collapse) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="js/script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
