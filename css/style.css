@@ -1,32 +1,22 @@
-/* ============ THEME VARIABLES ============ */
+/* ===============================
+   PORTFOLIO STYLE — LIGHT THEME ONLY
+   =============================== */
 
-/* Light Theme (default) */
+/* Global theme variables */
 :root {
   --bg: #f6f8fa;
   --card: #ffffff;
   --muted: #6b7280;
   --text: #0f172a;
-  --accent: #00c8ff;
-  --glass: rgba(255, 255, 255, 0.6);
-  --shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+  --accent: #00b4ff;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 
   --radius: 12px;
   --container-max: 1100px;
   --transition: 240ms cubic-bezier(.2, .9, .3, 1);
 }
 
-/* Dark Theme */
-html.dark {
-  --bg: #0b1220;
-  --card: #0f172a;
-  --muted: #9aa4b2;
-  --text: #e6eef8;
-  --accent: #00c8ff;
-  --glass: rgba(255, 255, 255, 0.03);
-  --shadow: 0 10px 30px rgba(2, 6, 23, 0.7);
-}
-
-/* ============ BASE RESET ============ */
+/* Reset & Base */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -43,21 +33,21 @@ body {
   color: var(--text);
   line-height: 1.6;
   transition: background var(--transition), color var(--transition);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-/* ============ NAVBAR ============ */
+/* ===============================
+   NAVBAR
+   =============================== */
+
 .navbar {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.03), transparent);
+  background: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow);
   padding: 10px 18px;
-  transition: background var(--transition), border var(--transition);
-}
-
-html.dark .navbar {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(6px);
 }
 
 .navbar .profile-img {
@@ -70,8 +60,9 @@ html.dark .navbar {
 }
 
 .brand-text .name {
-  font-weight: 700;
-  font-size: 1.05rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #0d1b2a; /* Deep navy for contrast */
   letter-spacing: 0.2px;
 }
 
@@ -79,6 +70,10 @@ html.dark .navbar {
   font-size: 0.78rem;
   color: var(--muted);
   margin-top: 2px;
+}
+
+.accent {
+  color: var(--accent);
 }
 
 .nav-link {
@@ -92,14 +87,17 @@ html.dark .navbar {
   color: var(--accent) !important;
 }
 
-/* ============ MAIN CONTENT ============ */
+/* ===============================
+   MAIN CONTENT
+   =============================== */
+
 .main-content {
   padding: 100px 24px 60px;
   max-width: var(--container-max);
   margin: 0 auto;
 }
 
-/* ============ SECTIONS ============ */
+/* Sections */
 .section {
   padding: 36px 0;
 }
@@ -109,7 +107,10 @@ html.dark .navbar {
   margin-bottom: 1rem;
 }
 
-/* ============ INTRO ============ */
+/* ===============================
+   INTRO
+   =============================== */
+
 .intro h1 {
   font-size: 2rem;
   margin-bottom: 6px;
@@ -121,12 +122,6 @@ html.dark .navbar {
   margin-bottom: 12px;
 }
 
-.accent {
-  color: var(--accent);
-  font-weight: 700;
-}
-
-/* Profile Card */
 .profile-block {
   text-align: center;
 }
@@ -145,32 +140,33 @@ html.dark .navbar {
   font-size: 0.95rem;
 }
 
-/* ============ TIMELINE ============ */
-.timeline {
+/* ===============================
+   TIMELINE / PROJECT / SKILLS / CONTACT
+   =============================== */
+
+.timeline, .skills-grid, .contact-grid {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-.timeline-item {
+.timeline-item, .project-card, .skills-grid > div, .contact-card {
   background: var(--card);
   border-radius: var(--radius);
-  padding: 18px;
   box-shadow: var(--shadow);
-  transition: transform var(--transition), background var(--transition);
+  transition: transform var(--transition);
+}
+
+.timeline-item {
+  padding: 18px;
 }
 
 .timeline-item:hover {
   transform: translateY(-4px);
 }
 
-/* ============ PROJECTS ============ */
 .project-card {
-  background: var(--card);
   padding: 16px;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  transition: background var(--transition), transform var(--transition);
 }
 
 .project-card:hover {
@@ -183,7 +179,7 @@ html.dark .navbar {
   margin-top: 8px;
 }
 
-/* ============ SKILLS ============ */
+/* Skills */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -191,14 +187,11 @@ html.dark .navbar {
 }
 
 .skills-grid > div {
-  background: var(--card);
   padding: 10px;
-  border-radius: 10px;
-  color: var(--text);
-  box-shadow: var(--shadow);
+  text-align: center;
 }
 
-/* ============ CONTACT ============ */
+/* Contact */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -211,12 +204,8 @@ html.dark .navbar {
   gap: 10px;
   align-items: center;
   padding: 12px;
-  border-radius: 10px;
-  background: var(--card);
   color: var(--text);
   text-decoration: none;
-  box-shadow: var(--shadow);
-  transition: transform var(--transition), background var(--transition);
 }
 
 .contact-card i {
@@ -230,7 +219,20 @@ html.dark .navbar {
   transform: translateY(-6px);
 }
 
-/* ============ UTILITIES ============ */
+/* ===============================
+   FOOTER
+   =============================== */
+.footer {
+  margin-top: 32px;
+  padding: 24px 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ===============================
+   UTILITIES
+   =============================== */
+
 .muted {
   color: var(--muted);
   font-size: 0.95rem;
@@ -239,23 +241,10 @@ html.dark .navbar {
 .divider {
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.06), transparent);
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.06), transparent);
   margin: 18px 0;
 }
 
-html.dark .divider {
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-}
-
-/* ============ FOOTER ============ */
-.footer {
-  margin-top: 32px;
-  padding: 24px 0;
-  color: var(--muted);
-  text-align: center;
-}
-
-/* ============ BUTTONS ============ */
 .btn-link {
   display: inline-flex;
   gap: 8px;
@@ -266,23 +255,16 @@ html.dark .divider {
   color: var(--text);
   text-decoration: none;
   box-shadow: var(--shadow);
-  transition: background var(--transition), color var(--transition);
+  transition: color var(--transition);
 }
 
 .btn-link:hover {
   color: var(--accent);
 }
 
-/* Dark mode toggle */
-#theme-toggle {
-  color: var(--muted);
-  border-radius: 8px;
-  padding: 6px 10px;
-  background: transparent;
-  border: none;
-}
-
-/* ============ RESPONSIVE ============ */
+/* ===============================
+   RESPONSIVE
+   =============================== */
 @media (max-width: 991px) {
   .main-content {
     padding-top: 80px;
@@ -301,17 +283,10 @@ html.dark .divider {
   }
 }
 
-/* Accessibility */
-a:focus, button:focus {
-  outline: 3px solid rgba(0,200,255,0.18);
+/* Accessibility focus */
+a:focus,
+button:focus {
+  outline: 3px solid rgba(0, 200, 255, 0.18);
   outline-offset: 4px;
   border-radius: 8px;
-}
-
-/* Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important;
-    animation: none !important;
-  }
 }

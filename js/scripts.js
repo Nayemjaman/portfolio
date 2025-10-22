@@ -1,38 +1,15 @@
-// Smooth scroll, theme toggle, active nav highlight
+// script.js — smooth scroll, active nav highlight, and footer year
+
 document.addEventListener('DOMContentLoaded', () => {
-  const root = document.documentElement;
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const saved = localStorage.getItem('theme');
-  const themeToggle = document.getElementById('theme-toggle');
-  const themeIcon = document.getElementById('theme-icon');
   const navbarToggler = document.querySelector('.navbar-toggler');
   const navbarCollapse = document.getElementById('navbarResponsive');
 
-  // Apply theme
-  function applyTheme(mode) {
-    if (mode === 'dark') root.classList.add('dark');
-    else root.classList.remove('dark');
-    localStorage.setItem('theme', mode);
-    themeIcon.className = mode === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
-    themeToggle.setAttribute('aria-pressed', mode === 'dark');
-  }
-
-  applyTheme(saved || (prefersDark ? 'dark' : 'light'));
-
-  // Toggle theme
-  themeToggle.addEventListener('click', () => {
-    const isDark = root.classList.contains('dark');
-    applyTheme(isDark ? 'light' : 'dark');
-  });
-
   // Smooth scroll for internal links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', e => {
-      const href = anchor.getAttribute('href');
-      if (href === '#' || href === '') return;
-      e.preventDefault();
-      const target = document.querySelector(href);
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
       if (!target) return;
+      e.preventDefault();
       const offset = 80;
       const top = target.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top, behavior: 'smooth' });
@@ -43,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Active nav item highlight
+  // Active nav link on scroll
   const sections = Array.from(document.querySelectorAll('main .section'));
   const navLinks = Array.from(document.querySelectorAll('.nav-link'));
 
