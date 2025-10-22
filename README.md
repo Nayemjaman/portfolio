@@ -8,9 +8,7 @@ This portfolio includes a **light/dark theme toggle**, smooth scrolling navigati
 
 ## 🌐 Live Demo
 
-> 🧭 Coming soon — you can host this on **GitHub Pages**, **Netlify**, or **Vercel**.
 
-Example:  
 `https://nayemjaman.github.io/portfolio/`
 
 ---
