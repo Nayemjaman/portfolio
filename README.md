@@ -9,7 +9,7 @@ This portfolio includes a **light/dark theme toggle**, smooth scrolling navigati
 ## 🌐 Live Demo
 
 
-`https://nayemjaman.github.io/portfolio/`
+https://nayemjaman.github.io/portfolio/
 
 ---
 
