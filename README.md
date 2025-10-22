@@ -25,4 +25,3 @@ This portfolio includes a **light/dark theme toggle**, smooth scrolling navigati
 
 ---
 
-## 🧱 Project Structure
