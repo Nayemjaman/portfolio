@@ -1,7 +1,30 @@
-https://nayemjaman.github.io/portfolio/
+# 💼 MD. Nayem Jaman Tusher — Developer Portfolio
 
-Hello, 
-I am a Python developer with expertise in web development, data analytics, and automation. 
-Experienced in Django, data science tools, and database management systems. 
-Seeking a challenging role to contribute technical skills and
-problem-solving abilities to a dynamic organization.
+A clean, responsive, and fast personal portfolio website built with **HTML**, **CSS**, **JavaScript**, and **Bootstrap 5**, showcasing my professional experience, projects, and technical skills.
+
+This portfolio includes a **light/dark theme toggle**, smooth scrolling navigation, and an elegant modern design optimized for performance and accessibility.
+
+---
+
+## 🌐 Live Demo
+
+> 🧭 Coming soon — you can host this on **GitHub Pages**, **Netlify**, or **Vercel**.
+
+Example:  
+`https://nayemjaman.github.io/portfolio/`
+
+---
+
+## ✨ Features
+
+- ⚡ **Responsive design** — mobile-friendly and grid-based layout  
+- 🌓 **Dark / Light mode toggle** with local storage memory  
+- 🎨 **Glass-style cards** and shadows for a professional UI  
+- 🔗 **Smooth scrolling navigation** and active link highlighting  
+- 👨‍💻 **Sections:** About, Experience, Projects, Education, Skills, Contact  
+- 🔄 **Animated theme transitions**  
+- 📆 **Dynamic footer year** (auto updates)
+
+---
+
+## 🧱 Project Structure
